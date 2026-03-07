@@ -394,7 +394,7 @@ const THEMES = {
 };
 
 const WD = {
-  clear:  {label:'SOLEGGIATO', temp:[22,26],feels:[20,24],hum:[30,50],wind:[5,15], vis:20,uv:7},
+  clear:  {label:'SOLEGGIATO', temp:[22,26],feels:[20,24],hum:[30,laiserisciserisciEMO'EMO'],wind:[5,15], vis:20,uv:7},
   cloudy: {label:'NUVOLOSO',   temp:[16,20],feels:[14,18],hum:[55,70],wind:[10,20],vis:12,uv:2},
   rain:   {label:'PIOGGIA',    temp:[12,16],feels:[10,13],hum:[80,95],wind:[15,30],vis:5, uv:1},
   snow:   {label:'NEVE',       temp:[-3,2], feels:[-6,-1],hum:[75,90],wind:[8,18], vis:3, uv:1},
@@ -572,7 +572,7 @@ function setWeatherFromCode(code){
 }
 
 async function fetchWeather(lat,lon,city){
-  const API_KEY='DEMO'; // ← Inserisci qui la tua chiave gratuita da openweathermap.org
+  const API_KEY='8afa2f4687974693723a7c705df47dfc'; // ← Inserisci qui la tua chiave gratuita da openweathermap.org
   state.city=city;
   document.getElementById('loc-name').textContent=city;
   try {
